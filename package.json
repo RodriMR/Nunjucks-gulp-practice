@@ -9,6 +9,16 @@
   "author": "Rodrigo Molina",
   "license": "ISC",
   "devDependencies": {
-    "gulp": "^4.0.2"
-  }
+    "browser-sync": "^2.27.11",
+    "gulp": "^4.0.2",
+    "gulp-nunjucks-render": "^2.2.3"
+  },
+  "overrides": [
+    {
+      "files": "*.njk",
+      "options": {
+        "parser": "nunjucks"
+      }
+    }
+  ]
 }
